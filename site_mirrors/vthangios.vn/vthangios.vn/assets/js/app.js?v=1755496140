@@ -1,0 +1,45 @@
+ // Data
+const apps = [
+  { icon: 'assets/img/lq.jpg', title: 'Menu Hack Map LQ V1', description: 'Cập Nhật Ngày 18/8', link: 'https://link4sub.com/oeBW' },
+  { icon: 'assets/img/lq.jpg', title: 'Menu Mod Skin LQ V2', description: 'Cập Nhật Ngày 18/8', link: 'https://link4sub.com/0xsp' }
+];
+const keys = [
+  { icon: 'assets/img/lq.jpg', title: 'Key Hack Map LQ V1', link: 'https://tinyurl.com/link-key-v1', iconTitle: 'Get key' },
+  { icon: 'assets/img/lq.jpg', title: 'Key Mod Skin LQ V2', link: 'https://tinyurl.com/link-key-v2', iconTitle: 'Get key' }
+];
+const files = [
+  { icon: 'assets/img/file.jpg', title: 'File 40 Skin LQ V10', description: 'Cập Nhật Ngày 17/8', link: 'https://vthangios.vn/uploads/files/File 40 Skin LQ V10.zip' },
+  { icon: 'assets/img/file.jpg', title: 'File 32 Skin LQ V9', description: 'Cập Nhật Ngày 15/8', link: 'https://vthangios.vn/uploads/files/File 32 Skin LQ V9.zip' }
+];
+const esignBypassItems = [
+  { icon: 'assets/img/esign.jpg', title: 'Esign', description: 'GLOBAL TAKEOFF, INC', link: 'https://install.vthangios.vn/F72I' }
+];
+
+// Render
+renderItems(apps, 'downloadAppContainer', 'App Icon');
+renderItems(keys, 'keyList', 'Key Icon');
+renderItems(files, 'fileList', 'File Icon');
+renderItems(esignBypassItems, 'esignBypassList', 'Esign Icon');
+
+function renderItems(data, containerId, iconAlt, iconSize = { w: 60, h: 60 }) {
+  const container = document.getElementById(containerId);
+  const fragment = document.createDocumentFragment();
+  data.forEach(({ icon, title, description = '', link, iconTitle }) => {
+    const item = document.createElement('div');
+    item.className = 'app-item';
+    item.innerHTML = `
+      <div class="info">
+        <img src="${icon}" alt="${iconAlt}" width="${iconSize.w}" height="${iconSize.h}">
+        <div class="text">
+          <span class="title">${title}</span>
+          ${description ? `<span class="description">${description}</span>` : '<span class="auto-time"></span>'}
+        </div>
+      </div>
+      <a href="${link}" class="download-button" title="${iconTitle || 'Tải về'}" target="_blank">
+        <i class="fas ${iconTitle?.toLowerCase().includes('key') ? 'fa-up-right-from-square' : 'fa-download'}"></i>
+      </a>
+    `;
+    fragment.appendChild(item);
+  });
+  container.appendChild(fragment);
+}
