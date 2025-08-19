@@ -1,0 +1,6 @@
+# robots.txt for vthangios.vn
+
+User-agent: *
+Disallow:
+
+Sitemap: https://vthangios.vn/sitemap.xml
