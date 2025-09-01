@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>APK MOD</title>
+    <style>
+        /* Base styles for dark mode */
+        :root {
+            --bg-color: #121212;
+            --container-color: #1e1e1e;
+            --title-color: white;
+            --subtitle-color: #aaa;
+            --border-color: #333;
+            --link-color: #007aff;
+            --button-bg: #007aff;
+        }
+
+        /* Light mode theme */
+        body.light-mode {
+            background-color: #f0f0f5;
+        }
+
+        body.light-mode .container {
+            background-color: white;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        body.light-mode h2,
+        body.light-mode h3 {
+            color: #333;
+        }
+
+        body.light-mode p {
+            color: #888;
+        }
+        
+        body.light-mode .app-item {
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        body.light-mode .see-all-link {
+            color: #007aff;
+        }
+
+        body {
+            background: var(--bg-color);
+            background-image: linear-gradient(135deg, #1e1e1e 0%, #0a0a0a 100%);
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            margin: 0;
+            padding: 20px;
+            color: var(--title-color);
+            transition: background-color 0.5s ease;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: auto;
+            background-color: var(--container-color);
+            border-radius: 15px;
+            padding: 20px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+            transition: background-color 0.5s ease;
+        }
+
+        .app-list-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .search-box {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border-radius: 10px;
+            border: none;
+            background-color: rgba(255, 255, 255, 0.1);
+            color: white;
+            font-size: 16px;
+            outline: none;
+        }
+        .search-box::placeholder {
+            color: #ccc;
+        }
+
+        .toggle-theme-btn, .sort-btn {
+            background: none;
+            border: 1px solid var(--title-color);
+            padding: 8px 12px;
+            border-radius: 20px;
+            font-size: 14px;
+            cursor: pointer;
+            color: var(--title-color);
+            transition: color 0.3s ease, border-color 0.3s ease;
+        }
+
+        .toggle-theme-btn:hover, .sort-btn:hover {
+            opacity: 0.8;
+        }
+
+        h2.section-title {
+            font-size: 24px;
+            font-weight: 600;
+            margin-top: 20px;
+            margin-bottom: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            color: var(--title-color);
+        }
+
+        .see-all-link {
+            font-size: 16px;
+            color: var(--link-color);
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .app-item {
+            display: flex;
+            align-items: center;
+            padding: 15px 0;
+            border-bottom: 1px solid var(--border-color);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .app-item:last-child {
+            border-bottom: none;
+        }
+
+        .app-item:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+            padding-left: 10px;
+        }
+
+        .app-icon {
+            width: 60px;
+            height: 60px;
+            border-radius: 12px;
+            margin-right: 15px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        .app-details {
+            flex-grow: 1;
+        }
+
+        .app-title {
+            font-size: 18px;
+            font-weight: 500;
+            color: var(--title-color);
+            margin: 0;
+        }
+
+        .app-subtitle {
+            font-size: 14px;
+            color: var(--subtitle-color);
+            margin: 2px 0 0;
+        }
+
+        .get-button {
+            background-color: var(--button-bg);
+            color: white;
+            font-size: 14px;
+            font-weight: bold;
+            padding: 8px 20px;
+            border-radius: 20px;
+            text-decoration: none;
+        }
+
+        .show-more-btn {
+            background-color: transparent;
+            border: 1px solid var(--link-color);
+            color: var(--link-color);
+            padding: 10px 15px;
+            border-radius: 20px;
+            cursor: pointer;
+            width: 100%;
+            margin-top: 20px;
+            font-weight: 500;
+            transition: background-color 0.3s ease;
+        }
+        .show-more-btn:hover {
+            background-color: rgba(0, 122, 255, 0.1);
+        }
+
+        /* New styles for the copyright notice */
+        .copyright {
+            color: var(--subtitle-color);
+            text-align: center;
+            font-size: 14px;
+            margin-top: 40px;
+            padding-bottom: 20px;
+        }
+    </style>
+</head>
+<body class="dark-mode">
+
+    <div class="container" id="app-list-container">
+        <div class="app-list-header">
+            <h1>App Apk</h1>
+            <div class="header-buttons">
+                <button id="toggle-theme-btn" class="toggle-theme-btn">Light Mode</button>
+                <button id="sort-btn" class="sort-btn">Sort A-Z</button>
+            </div>
+        </div>
+        <input type="text" id="search-input" class="search-box" placeholder="Search Apps...">
+        
+        </div>
+
+    <script>
+        // Full app data list
+        const appLists = [
+            {
+                id: "top-apps",
+                title: "NEW APP",
+                showSeeAll: false,
+                apps: [
+                    { name: "FAKE LAG APK", description: "", icon: "ff.jpeg", link: "https://www.mediafire.com/file/geqtzd0q9bl45g6/FAKE_LAG_ALL_FF_O50.apk/file" },
+                    { name: "ARABS V36", description: "", icon: "arabs.jpeg", link: "https://www.mediafire.com/file/9jiva5lt41v9vot/Ff_Normal_v36_40_ar__41_.apk/file" },
+                    { name: "PANEL", description: "USER:RAVI PASS:4320", icon: "ff.jpeg", link: "https://www.mediafire.com/file/zg178e0bx2hshmt/Px10F+v3.3.apk/file" }
+                ]
+            },
+            {
+                id: "games-for-kids",
+                title: "MOD APK",
+                showSeeAll: true,
+                apps: [
+                    { name: "ZARCHIVER PRO", description: "", icon: "zarchiver.png", link: "https://www.mediafire.com/file/0tn89ucuyoykp8l/ZArchiver-Pro-v1.0.10-MOD-OTR-%2528Getmodsapk.com%2529.apk/file" },
+                    { name: "FREEFIRE MOD V5", description: "", icon: "ff.jpeg", link: "https://www.mediafire.com/file/xzku12ivxueu5tx/GALAX_MODS_V5.apk/file" },
+                    { name: "THE KING V104", description: "", icon: "ff.jpeg", link: "https://www.mediafire.com/file/1orcm3qak7o3ieg/TheKing_V104.apk/file" }
+                ]
+            },
+            {
+                id: "popular-games",
+                title: "MOD APK",
+                showSeeAll: true,
+                apps: [
+                    { name: "HOLOGRAM🟢", description: "", icon: "ff.jpeg", link: "https://www.mediafire.com/file/602otj02v4c9yi6/3D+Green+.zip/file" },
+                    { name: "SHADOW BOT V5", description: "Build your own world", icon: "shadowbot.jpeg", link: "https://www.mediafire.com/file/4pmys17kt0eicc7/Shadow_Bot_v5.zip/file" },
+                    { name: "RR MOD V3.0 ", description: "", icon: "ff.jpeg", link: "https://www.mediafire.com/file/o5xk3jhheqfi7si/𝐁ʀ+𝐌ᴏᴅᴇ+3.0+.apk/file" },
+                    { name: "CHNNEL TELEGRAM", description: "Free mod all", icon: "telegram.png", link: "https://t.me/naratstore" }
+                ],
+                initialCount: 2 // Show only 2 apps initially
+            }
+        ];
+
+        let isAscending = true;
+
+        function generateAppLists(lists, searchTerm = '') {
+            const container = document.getElementById('app-list-container');
+            const sectionsContainer = document.createElement('div');
+            sectionsContainer.id = 'app-sections-container';
+
+            lists.forEach(listData => {
+                const filteredApps = listData.apps.filter(app => 
+                    app.name.toLowerCase().includes(searchTerm.toLowerCase())
+                );
+                
+                if (filteredApps.length === 0) return; // Don't show empty sections
+
+                const sectionDiv = document.createElement('div');
+                sectionDiv.id = listData.id;
+
+                const titleElement = document.createElement('h2');
+                titleElement.classList.add('section-title');
+                titleElement.textContent = listData.title;
+
+                const appsContainer = document.createElement('div');
+                appsContainer.classList.add('apps-container');
+
+                // Determine which apps to show based on initialCount
+                const appsToShow = listData.initialCount ? filteredApps.slice(0, listData.initialCount) : filteredApps;
+
+                appsToShow.forEach(appData => {
+                    appsContainer.appendChild(createAppItem(appData));
+                });
+                
+                sectionDiv.appendChild(titleElement);
+                sectionDiv.appendChild(appsContainer);
+                
+                // Add "Show More" button if needed
+                if (listData.initialCount && filteredApps.length > listData.initialCount) {
+                    const showMoreBtn = document.createElement('button');
+                    showMoreBtn.classList.add('show-more-btn');
+                    showMoreBtn.textContent = 'Show All';
+                    showMoreBtn.onclick = () => showMoreApps(listData.id);
+                    sectionDiv.appendChild(showMoreBtn);
+                }
+
+                sectionsContainer.appendChild(sectionDiv);
+            });
+
+            // Keep header and search bar, replace content
+            const existingSections = document.getElementById('app-sections-container');
+            if (existingSections) {
+                existingSections.replaceWith(sectionsContainer);
+            } else {
+                container.appendChild(sectionsContainer);
+            }
+        }
+
+        function createAppItem(appData) {
+            const appItem = document.createElement('div');
+            appItem.classList.add('app-item');
+            
+            appItem.innerHTML = `
+                <img class="app-icon" src="${appData.icon}" alt="${appData.name} icon">
+                <div class="app-details">
+                    <h3 class="app-title">${appData.name}</h3>
+                    <p class="app-subtitle">${appData.description}</p>
+                </div>
+                <a class="get-button" href="${appData.link}">GET</a>
+            `;
+            return appItem;
+        }
+
+        function filterApps() {
+            const searchTerm = document.getElementById('search-input').value;
+            generateAppLists(appLists, searchTerm);
+        }
+
+        function toggleTheme() {
+            const body = document.body;
+            body.classList.toggle('light-mode');
+            const toggleBtn = document.getElementById('toggle-theme-btn');
+            if (body.classList.contains('light-mode')) {
+                toggleBtn.textContent = 'Dark Mode';
+            } else {
+                toggleBtn.textContent = 'Light Mode';
+            }
+        }
+
+        function sortApps() {
+            isAscending = !isAscending;
+            const sortedLists = appLists.map(list => {
+                const sortedApps = [...list.apps].sort((a, b) => {
+                    const nameA = a.name.toLowerCase();
+                    const nameB = b.name.toLowerCase();
+                    if (nameA < nameB) return isAscending ? -1 : 1;
+                    if (nameA > nameB) return isAscending ? 1 : -1;
+                    return 0;
+                });
+                return { ...list, apps: sortedApps };
+            });
+            generateAppLists(sortedLists);
+
+            const sortBtn = document.getElementById('sort-btn');
+            sortBtn.textContent = isAscending ? 'Sort Z-A' : 'Sort A-Z';
+        }
+        
+        function showMoreApps(listId) {
+            const listData = appLists.find(list => list.id === listId);
+            const container = document.querySelector(`#${listId} .apps-container`);
+            const showMoreBtn = document.querySelector(`#${listId} .show-more-btn`);
+            
+            container.innerHTML = '';
+            listData.apps.forEach(appData => {
+                container.appendChild(createAppItem(appData));
+            });
+            showMoreBtn.style.display = 'none';
+        }
+
+        // Add event listeners
+        document.getElementById('search-input').addEventListener('input', filterApps);
+        document.getElementById('toggle-theme-btn').addEventListener('click', toggleTheme);
+        document.getElementById('sort-btn').addEventListener('click', sortApps);
+
+        // Initial render
+        generateAppLists(appLists);
+    </script>
+    
+    <div class="copyright">
+        &copy; 2025 NaratStore😘
+    </div>
+</body>
+</html>
