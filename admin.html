@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Telegram Channel - Naratkh168</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #0a0a2a 0%, #1a1a4a 100%);
+            color: #ffffff;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            text-align: center;
+            padding: 30px 0;
+            background: rgba(10, 10, 42, 0.8);
+            border-bottom: 2px solid #1e90ff;
+        }
+        
+        .logo-section {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        
+        .logo {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, #1e90ff 0%, #0066cc 100%);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 0 20px rgba(30, 144, 255, 0.5);
+            border: 3px solid #ffffff;
+        }
+        
+        .logo i {
+            font-size: 2.5rem;
+            color: white;
+        }
+        
+        .logo-text {
+            text-align: left;
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 5px;
+            color: #1e90ff;
+            text-shadow: 0 0 10px rgba(30, 144, 255, 0.5);
+        }
+        
+        .tagline {
+            font-size: 1.2rem;
+            color: #b0c4de;
+        }
+        
+        .main-content {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            margin: 40px 0;
+        }
+        
+        .description {
+            flex: 1;
+            min-width: 300px;
+            background: rgba(20, 20, 60, 0.7);
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            border-left: 4px solid #1e90ff;
+        }
+        
+        .description h2 {
+            color: #1e90ff;
+            margin-bottom: 20px;
+            font-size: 1.8rem;
+        }
+        
+        .description p {
+            line-height: 1.6;
+            margin-bottom: 15px;
+            color: #e6e6fa;
+        }
+        
+        .telegram-section {
+            flex: 1;
+            min-width: 300px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            background: rgba(20, 20, 60, 0.7);
+            padding: 40px 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            border-top: 4px solid #1e90ff;
+        }
+        
+        .telegram-icon {
+            font-size: 4rem;
+            color: #1e90ff;
+            margin-bottom: 20px;
+        }
+        
+        .telegram-link {
+            display: inline-block;
+            background: linear-gradient(135deg, #1e90ff 0%, #0066cc 100%);
+            color: white;
+            text-decoration: none;
+            padding: 15px 30px;
+            border-radius: 50px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin-top: 20px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 10px rgba(30, 144, 255, 0.3);
+        }
+        
+        .telegram-link:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 15px rgba(30, 144, 255, 0.5);
+            background: linear-gradient(135deg, #2a9dff 0%, #0077e6 100%);
+        }
+
+        .call-to-action { /* New style for the extra button section */
+            text-align: center;
+            margin: 30px 0;
+            padding: 20px;
+            background: rgba(20, 20, 60, 0.8);
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        }
+        
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin: 40px 0;
+        }
+        
+        .feature {
+            background: rgba(20, 20, 60, 0.7);
+            padding: 25px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+        }
+        
+        .feature:hover {
+            transform: translateY(-5px);
+        }
+        
+        .feature i {
+            font-size: 2.5rem;
+            color: #1e90ff;
+            margin-bottom: 15px;
+        }
+        
+        .feature h3 {
+            color: #1e90ff;
+            margin-bottom: 10px;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 20px;
+            margin-top: auto;
+            background: rgba(10, 10, 42, 0.9);
+            border-top: 1px solid #1e90ff;
+            color: #b0c4de;
+        }
+        
+        @media (max-width: 768px) {
+            .main-content {
+                flex-direction: column;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .logo-section {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .logo-text {
+                text-align: center;
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo-section">
+                <div class="logo">
+                    <i class="fab fa-telegram"></i>
+                </div>
+                <div class="logo-text">
+                    <h1>NaratStore</h1>
+                    <p class="tagline">Welcome </p>
+                </div>
+            </div>
+            <p class="tagline"></p>
+        </div>
+    </header>
+    
+    <div class="container">
+        <div class="main-content">
+            <div class="description">
+                <h2>About apple id</h2>
+                <p>សម្រាប់ apple id minecraft,shadowrocket តម្លៃត្រឹមតែ1$ប៉ុណ្ណោះអាច update បានរហូតមានសុវត្ថិភាពខ្ពស់។</p>
+                
+            </div>
+            
+            <div class="telegram-section">
+                <div class="telegram-icon">
+                    <i class="fab fa-telegram"></i>
+                </div>
+                <h2>telegram</h2>
+                <p>ចុចលីងខាងក្រោម</p>
+                <a href="https://t.me/Naratkh168" class="telegram-link" target="_blank">
+                    <i class="fab fa-telegram"></i> Admin
+                </a>
+            </div>
+        </div>
+
+        <div class="call-to-action">
+            <a href="feedbake.html" class="telegram-link" target="_blank" style="margin-top: 0; padding: 20px 40px; font-size: 1.4rem;">
+                <i class="fab fa-file"></i> feedbake
+            </a>
+        </div>
+        <div class="features">
+            <div class="feature">
+                <i class="fas fa-bolt"></i>
+                <h3>Instant Updates</h3>
+                <p>Get notified immediately when we post new content</p>
+            </div>
+            <div class="feature">
+                <i class="fas fa-users"></i>
+                <h3>Community</h3>
+                <p>Connect with like-minded individuals</p>
+            </div>
+            <div class="feature">
+                <i class="fas fa-star"></i>
+                <h3>Exclusive Content</h3>
+                <p>Access content not available elsewhere</p>
+            </div>
+            <div class="feature">
+                <i class="fas fa-comments"></i>
+                <h3>Direct Interaction</h3>
+                <p>Engage directly with our team</p>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Naratkh168. All rights reserved.</p>
+            <p>Join our Telegram channel: <a href="https://t.me/Naratkh168" style="color: #1e90ff;">@Naratkh168</a></p>
+        </div>
+    </footer>
+</body>
+</html>

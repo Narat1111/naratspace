@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="km">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>feedbake good</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #0a0a1a 0%, #1a1a2e 50%, #16213e 100%);
+            color: #e6e6e6;
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding: 25px;
+            background: rgba(0, 30, 60, 0.8);
+            border-radius: 12px;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+            border: 1px solid rgba(77, 148, 255, 0.3);
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            color: #4d94ff;
+            text-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
+        }
+        
+        .subtitle {
+            font-size: 1.2rem;
+            color: #b3d9ff;
+            max-width: 600px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+        
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            margin-top: 30px;
+        }
+        
+        .image-card {
+            background: rgba(0, 20, 40, 0.85);
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: 1px solid rgba(77, 148, 255, 0.2);
+        }
+        
+        .image-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.6);
+        }
+        
+        .image-container {
+            position: relative;
+            width: 100%;
+            padding-top: 122.22%; /* 9:11 aspect ratio (9/11 = 0.8182) */
+            overflow: hidden;
+        }
+        
+        .image-container img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+        
+        .image-card:hover .image-container img {
+            transform: scale(1.05);
+        }
+        
+        .image-text {
+            padding: 20px;
+            text-align: center;
+        }
+        
+        .image-text h3 {
+            color: #66b3ff;
+            margin-bottom: 12px;
+            font-size: 1.3rem;
+        }
+        
+        .image-text p {
+            color: #cccccc;
+            line-height: 1.6;
+            font-size: 0.95rem;
+        }
+        
+        footer {
+            text-align: center;
+            margin-top: 60px;
+            padding: 25px;
+            background: rgba(0, 20, 40, 0.9);
+            border-radius: 12px;
+            color: #99ccff;
+            border: 1px solid rgba(77, 148, 255, 0.2);
+        }
+        
+        .footer-text {
+            font-size: 1rem;
+            margin-bottom: 10px;
+        }
+        
+        .color-scheme {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 15px;
+        }
+        
+        .color-box {
+            width: 20px;
+            height: 20px;
+            border-radius: 4px;
+        }
+        
+        .blue { background: #4d94ff; }
+        .dark-blue { background: #16213e; }
+        .black { background: #0a0a1a; }
+        
+        @media (max-width: 768px) {
+            .gallery {
+                grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+                gap: 20px;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .subtitle {
+                font-size: 1rem;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .gallery {
+                grid-template-columns: 1fr;
+            }
+            
+            .container {
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>feedbake good</h1>
+            <p class="subtitle">សម្រាប់អ្នកខ្លាខខ្ញុំបោកអាចមើល feedbake ខាងក្រោមបាន</p>
+        </header>
+        
+        <div class="gallery">
+            <!-- រូបភាពទី 1 -->
+            <div class="image-card">
+                <div class="image-container">
+                    <img src="imgs/feedbake1.png" alt="រូបភាពទី 1">
+                </div>
+                <div class="image-text">
+                    <h3>មានសុវត្ថិភាពខ្ពស់</h3>
+                    <p>នេះគឺអតិថិជនដែលបានជាវ apple id ពីយើងខ្ញុំទៅ។</p>
+                </div>
+            </div>
+            
+            <!-- រូបភាពទី 2 -->
+            <div class="image-card">
+                <div class="image-container">
+                    <img src="imgs/feedbake2.png" alt="រូបភាពទី 2">
+                </div>
+                <div class="image-text">
+                    <h3>មានសុវត្ថិភាពខ្ពស់</h3>
+                    <p>នេះគឺអតិថិជនដែលបានជាវ apple id ពីយើងខ្ញុំទៅ។</p>
+                </div>
+            </div>
+            
+            <!-- រូបភាពទី 3 -->
+            <div class="image-card">
+                <div class="image-container">
+                    <img src="imgs/feedbake3.png" alt="រូបភាពទី 3">
+                </div>
+                <div class="image-text">
+                    <h3>មានសុវត្ថិភាពខ្ពស់</h3>
+                    <p>គ្មានបញ្ហានានា។</p>
+                </div>
+            </div>
+            
+            <!-- រូបភាពទី 4 -->
+            <div class="image-card">
+                <div class="image-container">
+                    <img src="imgs/feedbake4.png" alt="រូបភាពទី 4">
+                </div>
+                <div class="image-text">
+                    <h3>សុវត្ថិភាពខ្ពស់</h3>
+                    <p>នេះជាអតិថិជនដែលជាវ apple id </p>
+                </div>
+            </div>
+            
+            <!-- រូបភាពទី 5 -->
+            <div class="image-card">
+                <div class="image-container">
+                    <img src="imgs/feedbake5.png" alt="រូបភាពទី 5">
+                </div>
+                <div class="image-text">
+                    <h3>នេះជា logo ក្នុង telegram</h3>
+                    <p></p>
+                </div>
+            </div>
+        </div>
+        
+        <footer>
+            <p class="footer-text">គេហទំព័ថ្មី VII</p>
+            <p class="footer-text"> Good| &copy; 2025-2026</p>
+            <div class="color-scheme">
+                <div class="color-box blue" title="ពណ៌បៃតង"></div>
+                <div class="color-box dark-blue" title="ពណ៌ខៀវចាស់"></div>
+                <div class="color-box black" title="ពណ៌ខ្មៅ"></div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
