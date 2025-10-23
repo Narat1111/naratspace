@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Send Data to Telegram</title>
+</head>
+<body>
+  <h2>Send data to Telegram</h2>
+
+  <form id="form">
+    <input type="text" id="message" placeholder="Enter your message">
+    <button type="submit">Send</button>
+  </form>
+
+  <script>
+    const BOT_TOKEN = '8060626293:AAEO46pL2MzGN-N0Lc5GM7e28A-iklbgKUs';// យកពីBotFather 
+    const CHAT_ID = '@Naratkh168'; //យកពីuserinfobot
+
+    document.getElementById('form').addEventListener("submit", async (e) => {
+      e.preventDefault();
+
+      const message = document.getElementById('message').value.trim();
+      if (!message) {
+        alert("Please enter a message");
+        return;
+      }
+
+      const url = `https://api.telegram.org/bot${BOT_TOKEN}/sendMessage`;
+
+      await fetch(url, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ chat_id: CHAT_ID, text: message })
+      });
+
+      alert("Message sent successfully!");
+      document.getElementById("message").value = "";
+    });
+  </script>
+</body>
+</html>
