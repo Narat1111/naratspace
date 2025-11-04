@@ -1,0 +1,264 @@
+--2025-08-19 04:39:25--  http://vthangios.vn/
+Resolving vthangios.vn (vthangios.vn)... 103.200.23.68
+Connecting to vthangios.vn (vthangios.vn)|103.200.23.68|:80... connected.
+HTTP request sent, awaiting response... 301 Moved Permanently
+Location: https://vthangios.vn/ [following]
+--2025-08-19 04:39:26--  https://vthangios.vn/
+Connecting to vthangios.vn (vthangios.vn)|103.200.23.68|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 6891 (6.7K) [text/html]
+Saving to: ‘vthangios.vn/index.html’
+
+     0K ......                                                100%  157M=0s
+
+Last-modified header missing -- time-stamps turned off.
+2025-08-19 04:39:27 (157 MB/s) - ‘vthangios.vn/index.html’ saved [6891/6891]
+
+Loading robots.txt; please ignore errors.
+--2025-08-19 04:39:28--  https://vthangios.vn/robots.txt
+Reusing existing connection to vthangios.vn:443.
+HTTP request sent, awaiting response... 200 OK
+Length: 104 [text/plain]
+Saving to: ‘vthangios.vn/robots.txt’
+
+     0K                                                       100%  172M=0s
+
+2025-08-19 04:39:28 (172 MB/s) - ‘vthangios.vn/robots.txt’ saved [104/104]
+
+--2025-08-19 04:39:29--  https://vthangios.vn/assets/img/favicon.ico
+Reusing existing connection to vthangios.vn:443.
+HTTP request sent, awaiting response... 200 OK
+Length: 15086 (15K) [image/x-icon]
+Saving to: ‘vthangios.vn/assets/img/favicon.ico’
+
+     0K .......... ....                                       100% 60.8K=0.2s
+
+2025-08-19 04:39:29 (60.8 KB/s) - ‘vthangios.vn/assets/img/favicon.ico’ saved [15086/15086]
+
+--2025-08-19 04:39:30--  https://vthangios.vn/assets/css/style.css?v=1755096797
+Reusing existing connection to vthangios.vn:443.
+HTTP request sent, awaiting response... 200 OK
+Length: 5635 (5.5K) [text/css]
+Saving to: ‘vthangios.vn/assets/css/style.css?v=1755096797.css’
+
+     0K .....                                                 100%  154M=0s
+
+2025-08-19 04:39:30 (154 MB/s) - ‘vthangios.vn/assets/css/style.css?v=1755096797.css’ saved [5635/5635]
+
+--2025-08-19 04:39:31--  https://vthangios.vn/assets/img/avt.webp
+Reusing existing connection to vthangios.vn:443.
+HTTP request sent, awaiting response... 200 OK
+Length: 13826 (14K) [image/webp]
+Saving to: ‘vthangios.vn/assets/img/avt.webp’
+
+     0K .......... ...                                        100%  382M=0s
+
+2025-08-19 04:39:32 (382 MB/s) - ‘vthangios.vn/assets/img/avt.webp’ saved [13826/13826]
+
+--2025-08-19 04:39:33--  https://vthangios.vn/assets/img/tick.png
+Reusing existing connection to vthangios.vn:443.
+HTTP request sent, awaiting response... 200 OK
+Length: 27911 (27K) [image/png]
+Saving to: ‘vthangios.vn/assets/img/tick.png’
+
+     0K .......... .......... .......                         100%  112K=0.2s
+
+2025-08-19 04:39:33 (112 KB/s) - ‘vthangios.vn/assets/img/tick.png’ saved [27911/27911]
+
+--2025-08-19 04:39:35--  https://vthangios.vn/assets/img/tele.png
+Reusing existing connection to vthangios.vn:443.
+HTTP request sent, awaiting response... 200 OK
+Length: 12209 (12K) [image/png]
+Saving to: ‘vthangios.vn/assets/img/tele.png’
+
+     0K .......... .                                          100%  401M=0s
+
+2025-08-19 04:39:35 (401 MB/s) - ‘vthangios.vn/assets/img/tele.png’ saved [12209/12209]
+
+--2025-08-19 04:39:36--  https://vthangios.vn/assets/img/zalo.webp
+Reusing existing connection to vthangios.vn:443.
+HTTP request sent, awaiting response... 200 OK
+Length: 25522 (25K) [image/webp]
+Saving to: ‘vthangios.vn/assets/img/zalo.webp’
+
+     0K .......... .......... ....                            100%  103K=0.2s
+
+2025-08-19 04:39:36 (103 KB/s) - ‘vthangios.vn/assets/img/zalo.webp’ saved [25522/25522]
+
+--2025-08-19 04:39:37--  https://vthangios.vn/assets/img/ytb.png
+Reusing existing connection to vthangios.vn:443.
+HTTP request sent, awaiting response... 200 OK
+Length: 29282 (29K) [image/png]
+Saving to: ‘vthangios.vn/assets/img/ytb.png’
+
+     0K .......... .......... ........                        100%  118K=0.2s
+
+2025-08-19 04:39:38 (118 KB/s) - ‘vthangios.vn/assets/img/ytb.png’ saved [29282/29282]
+
+--2025-08-19 04:39:39--  https://vthangios.vn/random
+Reusing existing connection to vthangios.vn:443.
+HTTP request sent, awaiting response... 301 Moved Permanently
+Location: https://vthangios.vn/random/ [following]
+--2025-08-19 04:39:40--  https://vthangios.vn/random/
+Reusing existing connection to vthangios.vn:443.
+HTTP request sent, awaiting response... 200 OK
+Length: 4350 (4.2K) [text/html]
+Saving to: ‘vthangios.vn/random.html’
+
+     0K ....                                                  100% 70.0M=0s
+
+Last-modified header missing -- time-stamps turned off.
+2025-08-19 04:39:40 (70.0 MB/s) - ‘vthangios.vn/random.html’ saved [4350/4350]
+
+--2025-08-19 04:39:41--  https://vthangios.vn/uploads/files/signed_vthang.mobileconfig
+Reusing existing connection to vthangios.vn:443.
+HTTP request sent, awaiting response... 200 OK
+Length: 107328 (105K) [application/octet-stream]
+Saving to: ‘vthangios.vn/uploads/files/signed_vthang.mobileconfig’
+
+     0K .......... .......... .......... .......... .......... 47%  103K 1s
+    50K .......... .......... .......... .......... .......... 95%  206K 0s
+   100K ....                                                  100% 8.96T=0.7s
+
+2025-08-19 04:39:42 (144 KB/s) - ‘vthangios.vn/uploads/files/signed_vthang.mobileconfig’ saved [107328/107328]
+
+--2025-08-19 04:39:43--  https://vthangios.vn/uploads/files/Certs.zip
+Reusing existing connection to vthangios.vn:443.
+HTTP request sent, awaiting response... 200 OK
+Length: 20746 (20K) [application/zip]
+Saving to: ‘vthangios.vn/uploads/files/Certs.zip’
+
+     0K .......... ..........                                 100%  402M=0s
+
+2025-08-19 04:39:43 (402 MB/s) - ‘vthangios.vn/uploads/files/Certs.zip’ saved [20746/20746]
+
+--2025-08-19 04:39:44--  https://vthangios.vn/faq
+Reusing existing connection to vthangios.vn:443.
+HTTP request sent, awaiting response... 301 Moved Permanently
+Location: https://vthangios.vn/faq/ [following]
+--2025-08-19 04:39:45--  https://vthangios.vn/faq/
+Reusing existing connection to vthangios.vn:443.
+HTTP request sent, awaiting response... 200 OK
+Length: 6676 (6.5K) [text/html]
+Saving to: ‘vthangios.vn/faq.html’
+
+     0K ......                                                100%  223M=0s
+
+Last-modified header missing -- time-stamps turned off.
+2025-08-19 04:39:45 (223 MB/s) - ‘vthangios.vn/faq.html’ saved [6676/6676]
+
+--2025-08-19 04:39:46--  https://vthangios.vn/assets/img/faq.png
+Reusing existing connection to vthangios.vn:443.
+HTTP request sent, awaiting response... 200 OK
+Length: 5947 (5.8K) [image/png]
+Saving to: ‘vthangios.vn/assets/img/faq.png’
+
+     0K .....                                                 100%  262M=0s
+
+2025-08-19 04:39:46 (262 MB/s) - ‘vthangios.vn/assets/img/faq.png’ saved [5947/5947]
+
+--2025-08-19 04:39:47--  https://vthangios.vn/assets/js/main.js?v=1755097792
+Reusing existing connection to vthangios.vn:443.
+HTTP request sent, awaiting response... 200 OK
+Length: 2000 (2.0K) [text/javascript]
+Saving to: ‘vthangios.vn/assets/js/main.js?v=1755097792’
+
+     0K .                                                     100% 81.4M=0s
+
+2025-08-19 04:39:47 (81.4 MB/s) - ‘vthangios.vn/assets/js/main.js?v=1755097792’ saved [2000/2000]
+
+--2025-08-19 04:39:48--  https://vthangios.vn/assets/js/app.js?v=1755496140
+Reusing existing connection to vthangios.vn:443.
+HTTP request sent, awaiting response... 200 OK
+Length: 2361 (2.3K) [text/javascript]
+Saving to: ‘vthangios.vn/assets/js/app.js?v=1755496140’
+
+     0K ..                                                    100% 69.9M=0s
+
+2025-08-19 04:39:49 (69.9 MB/s) - ‘vthangios.vn/assets/js/app.js?v=1755496140’ saved [2361/2361]
+
+--2025-08-19 04:39:50--  https://vthangios.vn/assets/img/acc.png
+Reusing existing connection to vthangios.vn:443.
+HTTP request sent, awaiting response... 200 OK
+Length: 3143 (3.1K) [image/png]
+Saving to: ‘vthangios.vn/assets/img/acc.png’
+
+     0K ...                                                   100% 95.9M=0s
+
+2025-08-19 04:39:50 (95.9 MB/s) - ‘vthangios.vn/assets/img/acc.png’ saved [3143/3143]
+
+--2025-08-19 04:39:51--  https://vthangios.vn/assets/css/random.css?v=1755578380
+Reusing existing connection to vthangios.vn:443.
+HTTP request sent, awaiting response... 200 OK
+Length: 5164 (5.0K) [text/css]
+Saving to: ‘vthangios.vn/assets/css/random.css?v=1755578380.css’
+
+     0K .....                                                 100%  170M=0s
+
+2025-08-19 04:39:51 (170 MB/s) - ‘vthangios.vn/assets/css/random.css?v=1755578380.css’ saved [5164/5164]
+
+--2025-08-19 04:39:52--  https://vthangios.vn/assets/img/lq.jpg
+Reusing existing connection to vthangios.vn:443.
+HTTP request sent, awaiting response... 200 OK
+Length: 69269 (68K) [image/jpeg]
+Saving to: ‘vthangios.vn/assets/img/lq.jpg’
+
+     0K .......... .......... .......... .......... .......... 73%  103K 0s
+    50K .......... .......                                    100%  501M=0.5s
+
+2025-08-19 04:39:53 (139 KB/s) - ‘vthangios.vn/assets/img/lq.jpg’ saved [69269/69269]
+
+--2025-08-19 04:39:54--  https://vthangios.vn/assets/img/logo.png
+Reusing existing connection to vthangios.vn:443.
+HTTP request sent, awaiting response... 200 OK
+Length: 592516 (579K) [image/png]
+Saving to: ‘vthangios.vn/assets/img/logo.png’
+
+     0K .......... .......... .......... .......... ..........  8%  206K 3s
+    50K .......... .......... .......... .......... .......... 17%  683M 1s
+   100K .......... .......... .......... .......... .......... 25%  206K 1s
+   150K .......... .......... .......... .......... .......... 34%  645M 1s
+   200K .......... .......... .......... .......... .......... 43%  663M 1s
+   250K .......... .......... .......... .......... .......... 51%  206K 1s
+   300K .......... .......... .......... .......... .......... 60%  520M 0s
+   350K .......... .......... .......... .......... .......... 69%  791M 0s
+   400K .......... .......... .......... .......... .......... 77% 86.5M 0s
+   450K .......... .......... .......... .......... .......... 86%  603M 0s
+   500K .......... .......... .......... .......... .......... 95%  207K 0s
+   550K .......... .......... ........                        100%  299M=1.0s
+
+2025-08-19 04:39:55 (596 KB/s) - ‘vthangios.vn/assets/img/logo.png’ saved [592516/592516]
+
+--2025-08-19 04:39:56--  https://vthangios.vn/assets/js/random.js?v=1755578380
+Reusing existing connection to vthangios.vn:443.
+HTTP request sent, awaiting response... 200 OK
+Length: 1955 (1.9K) [text/javascript]
+Saving to: ‘vthangios.vn/assets/js/random.js?v=1755578380’
+
+     0K .                                                     100% 76.8M=0s
+
+2025-08-19 04:39:56 (76.8 MB/s) - ‘vthangios.vn/assets/js/random.js?v=1755578380’ saved [1955/1955]
+
+--2025-08-19 04:39:57--  https://vthangios.vn/assets/css/blog.css
+Reusing existing connection to vthangios.vn:443.
+HTTP request sent, awaiting response... 200 OK
+Length: 5474 (5.3K) [text/css]
+Saving to: ‘vthangios.vn/assets/css/blog.css’
+
+     0K .....                                                 100%  240M=0s
+
+2025-08-19 04:39:57 (240 MB/s) - ‘vthangios.vn/assets/css/blog.css’ saved [5474/5474]
+
+FINISHED --2025-08-19 04:39:57--
+Total wall clock time: 32s
+Downloaded: 22 files, 941K in 3.2s (298 KB/s)
+Converting links in vthangios.vn/faq.html... 7.
+7-0
+Converting links in vthangios.vn/index.html... 15.
+15-0
+Converting links in vthangios.vn/random.html... 13.
+13-0
+Converting links in vthangios.vn/assets/css/random.css?v=1755578380.css... nothing to do.
+Converting links in vthangios.vn/assets/css/style.css?v=1755096797.css... nothing to do.
+Converting links in vthangios.vn/assets/css/blog.css... nothing to do.
+Converted links in 6 files in 0.001 seconds.
