@@ -1,0 +1,64 @@
+// copy
+function copyText(elementId) {
+    const text = document.getElementById(elementId).innerText;
+    navigator.clipboard.writeText(text)
+        .then(() => {
+            alert("Đã copy: " + text);
+        })
+        .catch(err => {
+            alert("Không thể sao chép!");
+            console.error("Copy failed:", err);
+        });
+}
+
+// typing profile
+const textArray = ["Developer.", "Designer.", "Gamer.", "Youtuber."];
+const typedText = document.getElementById("typed-text");
+let textIndex = 0;
+let charIndex = 0;
+let isDeleting = false;
+let typingSpeed = 100;
+let pauseAfterTyped = 2000;
+function typeEffect() {
+    const current = textArray[textIndex];
+    if (!isDeleting) {
+    typedText.textContent = current.substring(0, charIndex + 1);
+    charIndex++;
+    if (charIndex === current.length) {
+        isDeleting = true;
+        setTimeout(typeEffect, pauseAfterTyped);
+        return;
+    }
+} else {
+    typedText.textContent = current.substring(0, charIndex - 1);
+    charIndex--;
+    if (charIndex === 0) {
+        isDeleting = false;
+        textIndex = (textIndex + 1) % textArray.length;
+    }
+    }
+    setTimeout(typeEffect, isDeleting ? 50 : typingSpeed);
+}
+document.addEventListener("DOMContentLoaded", typeEffect);
+
+// menu dropdown
+function toggleDropdown() {
+    const dropdown = document.getElementById("navDropdown");
+    dropdown.classList.toggle("show");
+}
+
+// Chặn chuột phải
+document.addEventListener('contextmenu', e => e.preventDefault(), {capture:true});
+
+// Chặn phím tắt phổ biến: F12, Ctrl+U, Ctrl+Shift+I/J, Ctrl+S/P...
+document.addEventListener('keydown', e => {
+  const k = e.key.toLowerCase();
+  const block = 
+    k === 'f12' ||
+    (e.ctrlKey && ['u','s','p'].includes(k)) ||
+    (e.ctrlKey && e.shiftKey && ['i','j'].includes(k));
+  if (block) { 
+    e.preventDefault(); 
+    e.stopPropagation(); 
+  }
+}, {capture:true});
